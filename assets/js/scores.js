@@ -15,3 +15,12 @@ function displayHighScores() {
 }
 
 displayHighScores();
+
+
+function resetHighScores() {
+    localStorage.removeItem('userScores');
+    displayHighScores(); 
+  }
+ 
+  document.getElementById('clear').addEventListener('click', resetHighScores);
+  
