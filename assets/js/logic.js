@@ -92,7 +92,7 @@ document.getElementById('submit').addEventListener('click', function () {
 
 function saveScore(score) {
   var initialsInput = document.getElementById('initials');
-  var initials = initialsInput.value.trim(); // Trim whitespace from initials
+  var initials = initialsInput.value.trim(); 
   if (initials === '') {
     alert('Please enter your initials.');
     return;
